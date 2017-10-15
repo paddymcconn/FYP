@@ -12,11 +12,9 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Scanner;
-
-
 import javax.net.ssl.HttpsURLConnection;
-
-public class Translation {
+public class Translation 
+{
 
 	private String key;
 
