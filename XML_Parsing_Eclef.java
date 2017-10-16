@@ -1,3 +1,4 @@
+package project;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
 import org.w3c.dom.Document;
@@ -15,9 +16,9 @@ public class XML_Parsing_Eclef {
 	public static void main(String args[]) {
 		System.setProperty("file.encoding", "UTF-8");
 		try {
-			File TranFile = new File("C://Users/u180384/Dropbox/Final Year/Final Year Project/test_xml/portuguese_With_Tags.txt");
+			File TranFile = new File("C://Users/Patrick/Dropbox/Final Year/Final Year Project/test_xml/persian_With_Tags.txt");
 			File fXmlFile = new File(
-					"C://Users//u180384//Dropbox//Final Year//Final Year Project//test_xml//clef2015.test.queries-PT.xml");
+					"C://Users//Patrick//Dropbox//Final Year//Final Year Project//test_xml//clef2015.test.queries-FA.xml");
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(fXmlFile);
@@ -26,7 +27,7 @@ public class XML_Parsing_Eclef {
 			// Normalize to stop things being separated by the new line
 			// character before tag.
 
-			System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
+			//System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
 			// root element should be topics for eClef
 			NodeList nList = doc.getElementsByTagName("top");
 
