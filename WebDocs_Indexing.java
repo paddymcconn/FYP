@@ -1,198 +1,164 @@
-
-/*
- * this class is used to index and store the webdocs after they have been indexed.
-*/
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 import org.apache.lucene.analysis.Analyzer;
-import org.apache.lucene.analysis.LowerCaseFilter;
-import org.apache.lucene.analysis.PorterStemFilter;
+import org.apache.lucene.analysis.CharArraySet;
 import org.apache.lucene.analysis.StopFilter;
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
-import org.apache.lucene.analysis.standard.StandardTokenizer;
+import org.apache.lucene.analysis.TokenStream;
+import org.apache.lucene.analysis.en.EnglishAnalyzer;
+import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
+import org.apache.lucene.document.Field.Store;
+import org.apache.lucene.document.StringField;
+import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.store.Directory;
+import org.apache.lucene.store.FSDirectory;
 import org.jsoup.Jsoup;
+import org.tartarus.snowball.ext.PorterStemmer;
 
+/*
+ * It stemms with the porter stemming function.
+ * It removes the stop word by tokenising.
+ * 
+ *  */
 public class WebDocs_Indexing {
 	static final File INDEX_DIR = new File(WriteToLuceneIndex.pathToLuceneIndex);
-	// change to point to a directory and create a small dir for testing
-	// purposes?
-	// the path that is defined in the index controller class.
+	static final Path INDEX_DIR2 = Paths.get(WriteToLuceneIndex.pathToLuceneIndex);
+	// getting the file we want to write to as a path.
 
 	private IndexWriter writer;
-	private IndexWriter w;
-	// the indexer we are going to use. do we need to change the config of it ?
 	private int counter;
+	// initialise the writer and counter.
 
-	public void GetItemsFromDB_3() {
+	public WebDocs_Indexing() {
 		counter = 0;
 	}
-	// just initialising the counter as 0 not returning anything soo can be void
+	// simple method for counter.
 
-	public void indexWithUrls(String rootpath) {
+	public void indexWithUrls(String rootpath) throws IOException {
 		try {
+			Directory index = FSDirectory.open(INDEX_DIR2);
+			// using FSDirectory as it determines best method of indexing, stops
+			// problem with 32bit overflowing machines.
 
-			/***
-			 * Patrick - the code here might need changing. What it is doing is
-			 * creating an IndexWriter in preparation for writing to the Lucene
-			 * Index
-			 */
-			Analyzer analyzer = new Analyzer() {
-				@Override
-				protected TokenStreamComponents createComponents(String fieldName) {
-					TokenStreamComponents ts = new TokenStreamComponents(new StandardTokenizer());
-					ts = new TokenStreamComponents(ts.getTokenizer(), new LowerCaseFilter(ts.getTokenStream()));
-					// to lower case as needed for porter stemming
-					ts = new TokenStreamComponents(ts.getTokenizer(),
-							new StopFilter(ts.getTokenStream(), StandardAnalyzer.ENGLISH_STOP_WORDS_SET));
-					ts = new TokenStreamComponents(ts.getTokenizer(), new PorterStemFilter(ts.getTokenStream()));
+			// String word = "direct";
+			// PorterStemmer stem = new PorterStemmer();
+			// stem.setCurrent(word);
+			// stem.stem();
+			// String result = stem.getCurrent();
+			// System.out.println(result);
+			// testing the stemming function for behaviour purposes.
 
-					return ts;
-				}
-			};
-			IndexWriterConfig config = new IndexWriterConfig(analyzer);
-			// our created analyser
+			EnglishAnalyzer engAnalyse = new EnglishAnalyzer();
+			// EnglishAnalyzer already has stemming built in: stackoverflow
+			// question.
+
+			IndexWriterConfig config = new IndexWriterConfig(engAnalyse);
 			config.setOpenMode(IndexWriterConfig.OpenMode.CREATE);
-			// open so it overwrites what is in the current index dir
-			writer = new IndexWriter(INDEX_DIR, config);
-
-			// writer = new IndexWriter(INDEX_DIR,
-			// AnalyzerUtil.getPorterStemmerAnalyzer(new StandardAnalyzer()),
-			// WriteToLuceneIndex.createNewIndex);
-			// could use englishanalyser as it already has a stemming function
-			// built into it.
-			/**
-			 * END Lucene Part
-			 */
+			writer = new IndexWriter(index, config);
+			// set the analyser and config for the writer.
 
 			File f = new File(rootpath);
+			checkDirWithUrls(f);
+			// write to lucene index.
 
-			checkDirWithUrls(f); // calls below method to loop through all
-									// webpage files in the folder & write them
-			// writer.optimize();
-			// This method has been deprecated, as it is horribly inefficient
-			// and very rarely justified.
-			// Lucene's multi-segment search performance has improved over time,
-			// and the default TieredMergePolicy now targets segments with
-			// deletions.
 			writer.close();
-
+			index.close();
+			// important: needs to be closed after to not overwrite.
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} // writeToLuceneIndex.createNewIndex will either be true or false;
-			// true = create a new index
-
+		}
 	}
 
-	/*
-	 * This method is used when want to index the documents into lucene reading
-	 * them from file (instead of reading them from db)
-	 * 
-	 * @param pathtofiles
-	 */
 	public void parseFileWithUrls(File pathtofiles) {
-
 		FileReader reader;
+		// initialise file reader.
 
 		try {
-
 			reader = new FileReader(pathtofiles);
 			Scanner in = new Scanner(reader);
 
 			String line = "";
 
 			while (in.hasNextLine()) {
-
 				line = in.nextLine();
 				line = line.trim();
 
-				if (line.contains("#UID:")) { // in this If statement we are
-												// adding 1 webpage to the
-												// Lucene Index
+				if (line.contains("#UID:")) {
+					// in this if statement we are adding 1 webpage to the
+					// Lucene Index.
 
-					/**
-					 * Patrick - the code here might need changing. What it is
-					 * doing is creating a new Lucene document for this webpage
-					 * & adding the documents (ie the webpages) ID to the Lucene
-					 * index.
-					 */
 					Document doc = new Document();
-					doc.add(new Field("eventId", line.replace("#UID:", ""), Field.Store.YES, Field.Index.ANALYSED));
-					/**
-					 * End Lucene part
+					// create document to write to.
+
+					doc.add(new StringField("eventId", line.replace("#UID:", ""), Field.Store.YES));
+					/*
+					 * String field is for storing things for exact matches,
+					 * things that should not be shortened.
 					 */
 
-					in.nextLine(); // skip date
+					in.nextLine();
+					// skip date, not needed for indexing.
 
-					line = in.nextLine(); // url
+					line = in.nextLine();
+					// url
 
-					/**
-					 * Patrick - the code here might need changing. What it is
-					 * doing is adding the webpages URL to the Lucene index.
-					 */
-					doc.add(new Field("contents1", line, Field.Store.YES, Field.Index.NOT_ANALYSED));
-					// Deprecated. this has been renamed to ANALYZED
-					/**
-					 * End Lucene part
-					 */
+					doc.add(new StringField("URL:", line, Store.YES));
 
-					in.nextLine(); // should be #CONTENT:
+					in.nextLine();
+					// should be #CONTENT.
 
-					line = in.nextLine(); // should be first line of webpage
-											// content
+					line = in.nextLine();
+					// should be first line of webpage content.
+
 					StringBuilder s = new StringBuilder();
 
-					while (!line.equals("#EOR")) { // keep looping until have
-													// read all this webpages
-													// text
+					while (!line.equals("#EOR")) {
+						// keep looping until have read all this webpages text.
 
 						s.append(line);
-
+						// add the line to the stringbuilder.
 						line = in.nextLine();
 					}
-					// remove the html content from the webpage:
 					String stripped_content = Jsoup.parse(s.toString()).text();
 					stripped_content = stripped_content.replaceAll("\\<.*?>", "");
 					stripped_content = stripped_content.replaceAll("\\\\", "");
 					stripped_content = stripped_content.replaceAll(" \\+", " ");
 					stripped_content = stripped_content.trim();
+					// remove the html content from the webpage.
 
-					if (!stripped_content.equals(" +")) { // if there is content
-															// in the webpage
+					stripped_content = stripped_content.toLowerCase();
+					// needs to be lower case to allow stemming.
 
-						/**
-						 * Patrick - the code here might need changing. What it
-						 * is doing is adding the webpage content to the Lucene
-						 * index.
-						 */
-						doc.add(new Field("contents0", stripped_content, Field.Store.YES, Field.Index.ANALYSED));
+					// System.out.println(stripped_content);
+					stripped_content = stem(stripped_content);
+					// System.out.println(stripped_content);
+					stripped_content = RemovingStopWords(stripped_content);
 
+					if (!stripped_content.equals(" +")) {
+						// if there is content in the webpage
+						doc.add(new TextField("Web Content", stripped_content, Store.YES));
+						// should the stemming be done here before?
 						writer.addDocument(doc);
-						/**
-						 * End Lucene Part
-						 */
 					}
 
 					s = null;
 					stripped_content = "";
-					doc = null; /**
-								 * Patrick this is a Lucene part - here we are
-								 * resetting the contents of doc
-								 */
+					doc = null;
 				}
 
 			}
 
 			line = "";
-
 			reader.close();
 			in.close();
 		}
@@ -201,31 +167,63 @@ public class WebDocs_Indexing {
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
 
-	/**
-	 * this method loops through all files in the folder (ie all files
-	 * containing webpage content) & calls the above parseFileWithUrls method to
-	 * read the file content and index it into Lucene.
-	 */
 	public void checkDirWithUrls(File dir) {
-
 		for (File child : dir.listFiles()) {
-
 			if (".".equals(child.getName()) || "..".equals(child.getName()))
-				continue; // Ignore the self and parent aliases.
+				continue;
+			// Ignore the self and parent aliases.
 			if (child.isFile()) {
 				counter++;
 				System.out.println(counter);
-				parseFileWithUrls(child); // do something - here we are calling
-											// the above method
-				// System.out.println(child);
+				parseFileWithUrls(child);
+				// call method.
 			} else if (child.isDirectory()) {
 				System.out.println(child);
 				checkDirWithUrls(child);
 			}
 		}
+	}
 
+	public String stem(String all) throws Exception {
+		PorterStemmer stem = new PorterStemmer();
+		String arr[] = all.split("\\s+");
+		// split by the white space character
+		int len = 0;
+		String result = "";
+		while (arr.length != len) {
+			stem.setCurrent(arr[len]);
+			stem.stem();
+			result += stem.getCurrent() + " ";
+			// System.out.println(result);
+			len++;
+		}
+		return result;
+		// does do the stemming. need to remove the stop words now.
+	}
+
+	public String RemovingStopWords(String term) throws Exception, IOException {
+		Analyzer analyzer = new EnglishAnalyzer();
+		TokenStream result = analyzer.tokenStream("Web Content", term);
+		CharArraySet stopWords = EnglishAnalyzer.getDefaultStopSet();
+		result = new StopFilter(result, stopWords);
+		CharTermAttribute resultAttr = result.addAttribute(CharTermAttribute.class);
+
+		result.reset();
+		// back to the start of the stream.
+
+		List<String> tokens = new ArrayList<>();
+
+		// holder for the tokens of the long string.
+		while (result.incrementToken()) {
+			tokens.add(resultAttr.toString());
+		}
+		result.end();
+		// read last token, close up shop.
+		analyzer.close();
+		result.close();
+		return tokens.toString();
+		// return the strings after removal of stop words.
 	}
 }
