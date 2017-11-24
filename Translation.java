@@ -1,5 +1,3 @@
-package project;
-
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -94,7 +92,7 @@ public class Translation {
 	}
 
 	public static void main(String[] args) throws IOException {
-		String filepath = ("C://Users/Patrick/Dropbox/Final Year/Final Year Project/test_xml/persian_With_Tags.txt");
+		String filepath = ("C://Users/u180384/Dropbox/Final Year/Final Year Project/test_xml/test.txt");
 		String keeper = readFileAsString(filepath);
 		Scanner Sc = new Scanner(System.in);
 		String input = Sc.next();
@@ -107,16 +105,14 @@ public class Translation {
 		// f = new BufferedWriter(new FileWriter(text,true));
 		// f.append(text);
 		try {
-		    BufferedWriter out = new BufferedWriter(new FileWriter("C://Users/Patrick/Dropbox/Final Year/Final Year Project/test_xml/persian_With_Tags.txt"));
-		    //text = text.replaceAll(".","\r\n");
-		    text = text.replaceAll(",","\r\n");
+		    BufferedWriter out = new BufferedWriter(new FileWriter("C://Users/u180384/Dropbox/Final Year/Final Year Project/test_xml/test_translated.txt"));
 		    out.write(text);  //Replace with the string 
-		                      //you are trying to write  
+		                                             //you are trying to write  
 		    out.close();
 		}
 		catch (IOException e)
 		{
-		    System.out.println("Exception");
+		    System.out.println("Exception ");
 
 		}
 		System.out.println(text);

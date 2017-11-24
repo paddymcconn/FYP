@@ -59,7 +59,7 @@ public class WriteQueriesToDB_edit {
 	}
 
 	// writing queries to db
-	public void write2014(String pathtofiles, String tableName) {
+	public void write2017(String pathtofiles, String tableName) {
 
 		// Declare the JDBC objects.
 		con = null;

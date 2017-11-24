@@ -13,7 +13,6 @@ public class EventObj {
 
 	public EventObj() {
 		eventId = "";
-
 		title = "";
 		content = "";
 		domain = "";
