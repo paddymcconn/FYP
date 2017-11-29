@@ -1,0 +1,132 @@
+Clef test Number : clef2015.test.1
+Query : mnohočetné červené skvrny na dolních končetinách po cestě z USA
+Clef test Number : clef2015.test.2
+Query : bulka s krvavými skvrnami na nose
+Clef test Number : clef2015.test.3
+Query : suchá červená a šupinatá chodidla u dětí
+Clef test Number : clef2015.test.4
+Query : svědivé bulky kůže
+Clef test Number : clef2015.test.5
+Query : pískoty a kašel během spánku + děti
+Clef test Number : clef2015.test.6
+Query : dítě pískající při dýchání
+Clef test Number : clef2015.test.7
+Query : příznaky rosacey
+Clef test Number : clef2015.test.8
+Query : zakalená rohovka a problémy s viděním
+Clef test Number : clef2015.test.9
+Query : zarudlé svědící oči
+Clef test Number : clef2015.test.10
+Query : hluboká stopa po kousnutí 
+Clef test Number : clef2015.test.11
+Query : bílé povlaky v dutině ústní
+Clef test Number : clef2015.test.12
+Query : kojenec suše kašle a má problémy s polykáním slin
+Clef test Number : clef2015.test.13
+Query : zakalená zornička ovlivňující zrak
+Clef test Number : clef2015.test.14
+Query : obtížně dýchající kojenec
+Clef test Number : clef2015.test.15
+Query : astmatický záchvat
+Clef test Number : clef2015.test.16
+Query : červené skvrnité prokrvácení dolních končetin
+Clef test Number : clef2015.test.17
+Query : šupinatá vyrážka
+Clef test Number : clef2015.test.18
+Query : špatné držení těla a rovnováha s třesem
+Clef test Number : clef2015.test.19
+Query : pohmožděný nehet palce u nohy
+Clef test Number : clef2015.test.20
+Query : pohybové obtíže s bezděčným třesem ruky
+Clef test Number : clef2015.test.21
+Query : běžné svědící kožní vyrážky
+Clef test Number : clef2015.test.22
+Query : hustý žlutý výtok z oka
+Clef test Number : clef2015.test.23
+Query : zarudlé krví podlité oči
+Clef test Number : clef2015.test.24
+Query : žlutý výtok vytékající z jednoho oka svědící
+Clef test Number : clef2015.test.25
+Query : červená vyrážka obličej kojence
+Clef test Number : clef2015.test.26
+Query : zarudlé bulky kůže
+Clef test Number : clef2015.test.27
+Query : návrat ze zahraničí se zvláštními pupínky na dolních končetinách
+Clef test Number : clef2015.test.28
+Query : kojenec kůže plíseň
+Clef test Number : clef2015.test.29
+Query : zarudlé skvrny na kůži s puchýři a hnisem
+Clef test Number : clef2015.test.30
+Query : zvláštní zvuky při dýchání
+Clef test Number : clef2015.test.31
+Query : batole se stridorem
+Clef test Number : clef2015.test.32
+Query : zarudlá podrážděná pokožka obličeje u kojence
+Clef test Number : clef2015.test.33
+Query : bílá infekce hltanu
+Clef test Number : clef2015.test.34
+Query : problém se zubním kazem
+Clef test Number : clef2015.test.35
+Query : výrazná iritace kontaktními čočkami
+Clef test Number : clef2015.test.36
+Query : pohybující se oči
+Clef test Number : clef2015.test.37
+Query : šupinatá kůže
+Clef test Number : clef2015.test.38
+Query : šupinatá zarudlá svědící chodidla u dětí
+Clef test Number : clef2015.test.39
+Query : kožní ekzém s puchýřky a hnisem
+Clef test Number : clef2015.test.40
+Query : kojenec rudá skvrna na obličeji
+Clef test Number : clef2015.test.41
+Query : oko duhovka velká
+Clef test Number : clef2015.test.42
+Query : skvrnité krvácení pod kůží
+Clef test Number : clef2015.test.43
+Query : svědivé bulky kůže
+Clef test Number : clef2015.test.44
+Query : zčernalý nehet
+Clef test Number : clef2015.test.45
+Query : pocit suchosti s podrážděním
+Clef test Number : clef2015.test.46
+Query : kašel kojence
+Clef test Number : clef2015.test.47
+Query : zubní kazy
+Clef test Number : clef2015.test.48
+Query : nemůžu zastavit pohyb mých očí onemocnění
+Clef test Number : clef2015.test.49
+Query : kojenec vždy dýchá se zavřenou pusou
+Clef test Number : clef2015.test.50
+Query : červená skvrna obličej kojence
+Clef test Number : clef2015.test.51
+Query : oči červené cévy
+Clef test Number : clef2015.test.52
+Query : bílé povlaky na dásních
+Clef test Number : clef2015.test.53
+Query : oteklé dolní končetiny
+Clef test Number : clef2015.test.54
+Query : červené zduřeniny na nose
+Clef test Number : clef2015.test.55
+Query : hluboká rána na kůži
+Clef test Number : clef2015.test.56
+Query : hrbící se při chůzi
+Clef test Number : clef2015.test.57
+Query : kojenec obtížné dýchání a pískavý kašel
+Clef test Number : clef2015.test.58
+Query : 39 stupňů a neštovice
+Clef test Number : clef2015.test.59
+Query : těžký a pískavý dech
+Clef test Number : clef2015.test.60
+Query : kojenec bílá skvrna na duhovce
+Clef test Number : clef2015.test.61
+Query : krvácení pod nehty
+Clef test Number : clef2015.test.63
+Query : krustovitá ložiska na kůži
+Clef test Number : clef2015.test.64
+Query : bezděčné rychlé horizontální pohyby očí
+Clef test Number : clef2015.test.65
+Query : zvláštní hnědé skvrny na kůži
+Clef test Number : clef2015.test.66
+Query : léčba kašle u kojenců
+Clef test Number : clef2015.test.67
+Query : černý zub

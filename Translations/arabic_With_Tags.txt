@@ -1,0 +1,132 @@
+ <num> clef2015.test.1 </num> 
+ <query> Many red marks on the legs after traveling from us </query> 
+ <num> clef2015.test.2 </num> 
+ <query> Block with bloody spots on the nose </query> 
+ <num> clef2015.test.3 </num> 
+ <query> The feet are dry and red in the children </query> 
+ <num> clef2015.test.4 </num> 
+ <query> Itchy leather blocks </query> 
+ <num> clef2015.test.5 </num> 
+ <query> Whistling noise and coughing during sleep </query> 
+ <num> clef2015.test.6 </num> 
+ <query> A child gives a clear voice when breathing </query> 
+ <num> clef2015.test.7 </num> 
+ <query> Symptoms of rosacea </query> 
+ <num> clef2015.test.8 </num> 
+ <query> Corneal cloudy and vision problem </query> 
+ <num> clef2015.test.9 </num> 
+ <query> Itching in the red eyes </query> 
+ <num> clef2015.test.10 </num> 
+ <query> A bite mark in the crater </query> 
+ <num> clef2015.test.11 </num> 
+ <query> White spots in the mouth </query> 
+ <num> clef2015.test.12 </num> 
+ <query> A child has a dry cough and has trouble swallowing saliva </query> 
+ <num> clef2015.test.13 </num> 
+ <query> The cloudy gums affect vision </query> 
+ <num> clef2015.test.14 </num> 
+ <query> Breathing difficulties in the infant </query> 
+ <num> clef2015.test.15 </num> 
+ <query> Asthma attack </query> 
+ <num> clef2015.test.16 </num> 
+ <query> Red bruises on the legs </query> 
+ <num> clef2015.test.17 </num> 
+ <query> Diffuse skin rash </query> 
+ <num> clef2015.test.18 </num> 
+ <query> Weak walking and balance with vibration </query> 
+ <num> clef2015.test.19 </num> 
+ <query> A bruise in the nail of a thumb </query> 
+ <num> clef2015.test.20 </num> 
+ <query> Difficulty of movement with involuntary eyelid </query> 
+ <num> clef2015.test.21 </num> 
+ <query> Common itchy skin lesions </query> 
+ <num> clef2015.test.22 </num> 
+ <query> Exit thick yellow detachments of the eye </query> 
+ <num> clef2015.test.23 </num> 
+ <query> Eyes with red blood </query> 
+ <num> clef2015.test.24 </num> 
+ <query> A yellow sticky substance coming out of one eye is itchy </query> 
+ <num> clef2015.test.25 </num> 
+ <query> Red rash on the childs face </query> 
+ <num> clef2015.test.26 </num> 
+ <query> Raised red leather blocks </query> 
+ <num> clef2015.test.27 </num> 
+ <query> Return from overseas with intermediate patches on the legs </query> 
+ <num> clef2015.test.28 </num> 
+ <query> Fungus on babys skin </query> 
+ <num> clef2015.test.29 </num> 
+ <query> Red spot on skin with pimple and dry pus </query> 
+ <num> clef2015.test.30 </num> 
+ <query> Strange sounds when breathing </query>
+ <num> clef2015.test.31 </num> 
+ <query> The child has a squeaky breathing </query> 
+ <num> clef2015.test.32 </num> 
+ <query> Red irritated skin on the face of a child </query> 
+ <num> clef2015.test.33 </num> 
+ <query> White inflammation of the pharynx </query> 
+ <num> clef2015.test.34 </num> 
+ <query> Dental cavity problem </query> 
+ <num> clef2015.test.35 </num> 
+ <query> Too much irritation when placing contact lenses </query> 
+ <num> clef2015.test.36 </num> 
+ <query> Shivering in the eye </query> 
+ <num> clef2015.test.37 </num> 
+ <query> Tanned skin </query> 
+ <num> clef2015.test.38 </num> 
+ <query> Thick red-tipped feet in children </query> 
+ <num> clef2015.test.39 </num> 
+ <query> Skin eczema with pimple and white pus </query> 
+ <num> clef2015.test.40 </num> 
+ <query> Baby with a big red mark on the face </query> 
+ <num> clef2015.test.41 </num> 
+ <query> Large iris eye </query> 
+ <num> clef2015.test.42 </num> 
+ <query> Spot bleeding under the skin </query> 
+ <num> clef2015.test.43 </num> 
+ <query> It caused abrasive bruises on the skin </query> 
+ <num> clef2015.test.44 </num> 
+ <query> Zafar Atem </query> 
+ <num> clef2015.test.45 </num> 
+ <query> Dry feel with irritation </query> 
+ <num> clef2015.test.46 </num> 
+ <query> Child coughs </query> 
+ <num> clef2015.test.47 </num> 
+ <query> Cavities </query> 
+ <num> clef2015.test.48 </num> 
+ <query> I can not stop moving my eyes a medical problem </query> 
+ <num> clef2015.test.49 </num> 
+ <query> The child always breathes and the mouth is closed </query> 
+ <num> clef2015.test.50 </num> 
+ <query> A red spot on the face of a child </query> 
+ <num> clef2015.test.51 </num> 
+ <query> Red blood vessels of eyes </query> 
+ <num> clef2015.test.52 </num> 
+ <query> White spots on the gums </query> 
+ <num> clef2015.test.53 </num> 
+ <query> The legs are swollen </query> 
+ <num> clef2015.test.54 </num> 
+ <query> Red blocks on the nose </query> 
+ <num> clef2015.test.55 </num> 
+ <query> Box style tag in the skin </query> 
+ <num> clef2015.test.56 </num> 
+ <query> Lax during walking </query> 
+ <num> clef2015.test.57 </num> 
+ <query> Exhaustive breathing when the baby with severe cough and wheezing </query> 
+ <num> clef2015.test.58 </num> 
+ <query> Temperature and pox </query> 
+ <num> clef2015.test.59 </num> 
+ <query> Breathe heavy and sharp </query> 
+ <num> clef2015.test.60 </num> 
+ <query> A child with a white dot in the iris </query> 
+ <num> clef2015.test.61 </num> 
+ <query> Nail bruises </query> 
+ <num> clef2015.test.63 </num> 
+ <query> Hard leather spots </query> 
+ <num> clef2015.test.64 </num> 
+ <query> The left-right eye movement is voluntary </query> 
+ <num> clef2015.test.65 </num> 
+ <query> Exotic brown spots on the skin </query> 
+ <num> clef2015.test.66 </num> 
+ <query> Cough treatment in children </query> 
+ <num> clef2015.test.67 </num> 
+ <query> Black sprocket </query> 

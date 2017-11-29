@@ -1,0 +1,132 @@
+Clef test Number : clef2015.test.1
+Query : numerose macchie rosse sulle gambe dopo un viaggio negli Stati Uniti
+Clef test Number : clef2015.test.2
+Query : grumo con macchie di sangue sul naso
+Clef test Number : clef2015.test.3
+Query : piedi rossi secchi e squamosi nei bambini
+Clef test Number : clef2015.test.4
+Query : protuberanze pruriginose sulla cute
+Clef test Number : clef2015.test.5
+Query : fischio e tosse durante il sonno + bambini
+Clef test Number : clef2015.test.6
+Query : bambino produce fischio quando respira
+Clef test Number : clef2015.test.7
+Query : sintomi della rosacea
+Clef test Number : clef2015.test.8
+Query : cornea opacizzata e problemi di vista
+Clef test Number : clef2015.test.9
+Query : occhi rossi pruriginosi
+Clef test Number : clef2015.test.10
+Query : morso a forma di cratere
+Clef test Number : clef2015.test.11
+Query : macchie bianche in bocca
+Clef test Number : clef2015.test.12
+Query : bambino con tosse secca e difficoltà a deglutire la saliva
+Clef test Number : clef2015.test.13
+Query : pupilla opacizzata che causa problemi di vista
+Clef test Number : clef2015.test.14
+Query : lattante difficoltà di respirazione
+Clef test Number : clef2015.test.15
+Query : attacco d'asma
+Clef test Number : clef2015.test.16
+Query : macchie rosse di sangue sulle gambe
+Clef test Number : clef2015.test.17
+Query : eruzioni squamose
+Clef test Number : clef2015.test.18
+Query : scarsa andatra ed equilibrio con tremolii 
+Clef test Number : clef2015.test.19
+Query : unghia dell'alluce contuso
+Clef test Number : clef2015.test.20
+Query : difficoltà di movimento con involontario tremore della mano
+Clef test Number : clef2015.test.21
+Query : eruzioni cutanee pruriginose comuni
+Clef test Number : clef2015.test.22
+Query : densa secrezione gialla dell´occhio
+Clef test Number : clef2015.test.23
+Query : occhi rossi insnguinati
+Clef test Number : clef2015.test.24
+Query : gialla secrezione da un occhio pruriginoso
+Clef test Number : clef2015.test.25
+Query : eruzione cutanea rossa volto del bambino
+Clef test Number : clef2015.test.26
+Query : protuberanze rosse pelle
+Clef test Number : clef2015.test.27
+Query : rientro da un paese estero con strane macchie sulle gambe
+Clef test Number : clef2015.test.28
+Query : pelle del bambino micosi
+Clef test Number : clef2015.test.29
+Query : macchie rosse sulla pelle con vesciche e pus secco
+Clef test Number : clef2015.test.30
+Query : strani rumori durante la respirazione
+Clef test Number : clef2015.test.31
+Query : bambino con respirazione acuta
+Clef test Number : clef2015.test.32
+Query : pelle rossa irritata sul viso del bambino
+Clef test Number : clef2015.test.33
+Query : Infezione bianca nella faringe
+Clef test Number : clef2015.test.34
+Query : problema con le carie
+Clef test Number : clef2015.test.35
+Query : irritazione significativa con lenti a contatto
+Clef test Number : clef2015.test.36
+Query : occhi che tremano
+Clef test Number : clef2015.test.37
+Query : pelle squamosa
+Clef test Number : clef2015.test.38
+Query : piedi rossi squamosi pruriginosi nei bambini
+Clef test Number : clef2015.test.39
+Query : eczema della pelle con vesciche e pus bianco
+Clef test Number : clef2015.test.40
+Query : macchie rosse sul viso del bambino
+Clef test Number : clef2015.test.41
+Query : occhio iride grande
+Clef test Number : clef2015.test.42
+Query : macchie emorragiche sotto la pelle
+Clef test Number : clef2015.test.43
+Query : grumi pruriginosi cute
+Clef test Number : clef2015.test.44
+Query : unghia annerita
+Clef test Number : clef2015.test.45
+Query : sensazione di secchezza con irritazione
+Clef test Number : clef2015.test.46
+Query : tosse del bambino
+Clef test Number : clef2015.test.47
+Query : carie
+Clef test Number : clef2015.test.48
+Query : non riesco a fermare il movimento dei miei occhi malattia
+Clef test Number : clef2015.test.49
+Query : bambino che respira sempre con la bocca chiusa
+Clef test Number : clef2015.test.50
+Query : puntino rosso volto di bambino
+Clef test Number : clef2015.test.51
+Query : occhi vasi sanguigni rossi
+Clef test Number : clef2015.test.52
+Query : macchie bianche sulle gengive
+Clef test Number : clef2015.test.53
+Query : gambe gonfie
+Clef test Number : clef2015.test.54
+Query : grumi rossi sul naso
+Clef test Number : clef2015.test.55
+Query : segno sulla pelle a forma di cratere 
+Clef test Number : clef2015.test.56
+Query : camminare curvo
+Clef test Number : clef2015.test.57
+Query : lattante difficoltà a respirare e breve tosse con fischio 
+Clef test Number : clef2015.test.58
+Query : 39 gradi e varicella
+Clef test Number : clef2015.test.59
+Query : respirazione faticosa e acuta
+Clef test Number : clef2015.test.60
+Query : bambino punto bianco dell'iride
+Clef test Number : clef2015.test.61
+Query : ematomi sotto le unghie
+Clef test Number : clef2015.test.63
+Query : croste sulla pelle
+Clef test Number : clef2015.test.64
+Query : movimenti oculari orizzontali rapidi involontari
+Clef test Number : clef2015.test.65
+Query : strane macchie scure sulla pelle
+Clef test Number : clef2015.test.66
+Query : trattamento della tosse nei bambini
+Clef test Number : clef2015.test.67
+Query : dente nero
