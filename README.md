@@ -2,11 +2,11 @@
 This is for the code for my Final Year Project on medical information retrieval
 
 * This project is done in java, using the Eclipse IDE.
-              * Inclusion of the Lucene Library Jar file is needed to access the methods that are used in this project,
+  * Inclusion of the Lucene Library Jar file is needed to access the methods that are used in this project,
     found here : https://lucene.apache.org/core/
-         * Inclusion of the Jar files found in the Jars folder is needed to compile, simple add to build path as an external Jar file in the project setup.
-         * This report is based on the CLEF eHealth Task 2, found here https://sites.google.com/site/clefehealth2015/task-2
-         * Data used for this project was access from https://physionet.org/users/, where an exsisting user must allow the use of the data set.
+* Inclusion of the Jar files found in the Jars folder is needed to compile, simple add to build path as an external Jar file in the project setup.
+  * This report is based on the CLEF eHealth Task 2, found here https://sites.google.com/site/clefehealth2015/task-2
+  * Data used for this project was access from https://physionet.org/users/, where an exsisting user must allow the use of the data set.
     
     
 
