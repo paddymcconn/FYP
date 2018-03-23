@@ -24,3 +24,5 @@ This contains the files that are extra, including the EXE for Trec_Eval, a Gantt
 
 # Final Code
 This contains all of the code that was ultimately used in this research project.
+
+# Note: The inverted index used for this project is saved in a file over 40GB in size before the stemming process, ~4.5GB after cleaning. Not possible to include here.
