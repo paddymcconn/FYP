@@ -1,7 +1,7 @@
 # Final Year Project
 This is for the code for my Final Year Project on medical information retrieval
 
-Markup : * This project is done in java, using the Eclipse IDE.
+* This project is done in java, using the Eclipse IDE.
               * Inclusion of the Lucene Library Jar file is needed to access the methods that are used in this project,
     found here : https://lucene.apache.org/core/
          * Inclusion of the Jar files found in the Jars folder is needed to compile, simple add to build path as an external Jar file in the project setup.
