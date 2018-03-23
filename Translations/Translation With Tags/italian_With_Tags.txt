@@ -1,0 +1,132 @@
+<num> clef2015.test.1 </num> 
+ <query> numerous red spots on the legs after a trip to the United States </query> 
+ <num> clef2015.test.2 </num> 
+ <query> lump with blood stains on the nose </query> 
+ <num> clef2015.test.3 </num> 
+ <query> dry and squamous red feet in children </query> 
+ <num> clef2015.test.4 </num> 
+ <query> pruriginous on the skin </query> 
+ <num> clef2015.test.5 </num> 
+ <query> whistle and cough during sleep + kids </query> 
+ <num> clef2015.test.6 </num> 
+ <query> child produces whistling when he breathes </query> 
+ <num> clef2015.test.7 </num> 
+ <query> rosacea symptoms </query> 
+ <num> clef2015.test.8 </num> 
+ <query> opaque cornea and vision problems </query> 
+ <num> clef2015.test.9 </num> 
+ <query> pruriginous red eyes </query> 
+ <num> clef2015.test.10 </num> 
+ <query> bite-shaped crater </query> 
+ <num> clef2015.test.11 </num> 
+ <query> white spots in the mouth </query> 
+ <num> clef2015.test.12 </num> 
+ <query> baby with dry cough and difficulty swallowing saliva </query> 
+ <num> clef2015.test.13 </num> 
+ <query> opaque pupil that causes vision problems </query> 
+ <num> clef2015.test.14 </num> 
+ <query> inflamed breathing difficulties </query> 
+ <num> clef2015.test.15 </num> 
+ <query> asthma attack </query> 
+ <num> clef2015.test.16 </num> 
+ <query> red blood spots on the legs </query> 
+ <num> clef2015.test.17 </num> 
+ <query> squamous eruptions </query> 
+ <num> clef2015.test.18 </num> 
+ <query> low speed and balance with tremolii </query> 
+ <num> clef2015.test.19 </num> 
+ <query> contralateral toe nail </query> 
+ <num> clef2015.test.20 </num> 
+ <query> difficulty moving with involuntary trembling of the hand </query> 
+ <num> clef2015.test.21 </num> 
+ <query> Common pruriginal skin rashes </query> 
+ <num> clef2015.test.22 </num> 
+ <query> dense yellow eye secretion </query> 
+ <num> clef2015.test.23 </num> 
+ <query> insane red eyes </query> 
+ <num> clef2015.test.24 </num> 
+ <query> yellow secretion from a pruriginal eye </query> 
+ <num> clef2015.test.25 </num> 
+ <query> red baby face rash </query> 
+ <num> clef2015.test.26 </num> 
+ <query> red skin protrusions </query> 
+ <num> clef2015.test.27 </num> 
+ <query> I come back from a foreign country with strange stains on my legs </query> 
+ <num> clef2015.test.28 </num> 
+ <query> mycosis baby skin </query> 
+ <num> clef2015.test.29 </num> 
+ <query> red spots on the skin with blisters and dry pus </query> 
+ <num> clef2015.test.30 </num> 
+ <query> strange noises during breathing </query> 
+ <num> clef2015.test.31 </num> 
+ <query> kid with acute breathing </query> 
+ <num> clef2015.test.32 </num> 
+ <query> irritated red skin on the baby&#39;s face </query> 
+ <num> clef2015.test.33 </num> 
+ <query> White infection in the pharynx </query> 
+ <num> clef2015.test.34 </num> 
+ <query> problem with caries </query> 
+ <num> clef2015.test.35 </num> 
+ <query> Significant irritation with contact lenses </query> 
+ <num> clef2015.test.36 </num> 
+ <query> eyes that tremble </query> 
+ <num> clef2015.test.37 </num> 
+ <query> scaly skin </query> 
+ <num> clef2015.test.38 </num> 
+ <query> Prickly squamous red feet in children </query> 
+ <num> clef2015.test.39 </num> 
+ <query> skin eczema with blisters and white pus </query> 
+ <num> clef2015.test.40 </num> 
+ <query> red spots on the baby&#39;s face </query> 
+ <num> clef2015.test.41 </num> 
+ <query> great iris eye </query> 
+ <num> clef2015.test.42 </num> 
+ <query> hemorrhagic spots under the skin </query> 
+ <num> clef2015.test.43 </num> 
+ <query> cute pruriginal lumps </query> 
+ <num> clef2015.test.44 </num> 
+ <query> blackened nail </query> 
+ <num> clef2015.test.45 </num> 
+ <query> feeling dry with irritation </query> 
+ <num> clef2015.test.46 </num> 
+ <query> baby cough </query> 
+ <num> clef2015.test.47 </num> 
+ <query> caries </query> 
+ <num> clef2015.test.48 </num> 
+ <query> I can not stop my sick eye movement </query> 
+ <num> clef2015.test.49 </num> 
+ <query> baby who always breathes with his mouth shut </query> 
+ <num> clef2015.test.50 </num> 
+ <query> red dot baby face </query> 
+ <num> clef2015.test.51 </num> 
+ <query> eyes red blood vessels </query> 
+ <num> clef2015.test.52 </num> 
+ <query> white marks on the gums </query> 
+ <num> clef2015.test.53 </num> 
+ <query> swollen legs </query> 
+ <num> clef2015.test.54 </num> 
+ <query> red lumps on the nose </query> 
+ <num> clef2015.test.55 </num> 
+ <query> sign on the crater-shaped skin </query> 
+ <num> clef2015.test.56 </num> 
+ <query> walking bent </query> 
+ <num> clef2015.test.57 </num> 
+ <query> infant difficulty breathing and short cough with whistle </query> 
+ <num> clef2015.test.58 </num> 
+ <query> 39 degrees and varicella </query> 
+ <num> clef2015.test.59 </num> 
+ <query> tiring and acute breathing </query> 
+ <num> clef2015.test.60 </num> 
+ <query> baby white point of the iris </query> 
+ <num> clef2015.test.61 </num> 
+ <query> hematoma under the nails </query> 
+ <num> clef2015.test.63 </num> 
+ <query> crusts on the skin </query> 
+ <num> clef2015.test.64 </num> 
+ <query> involuntary rapid horizontal eye movements </query> 
+ <num> clef2015.test.65 </num> 
+ <query> foreign dark spots on the skin </query> 
+ <num> clef2015.test.66 </num> 
+ <query> cough treatment in children </query> 
+ <num> clef2015.test.67 </num> 
+ <query> black tooth </query> 

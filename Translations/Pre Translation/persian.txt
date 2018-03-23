@@ -1,0 +1,132 @@
+﻿Clef test Number : clef2015.test.1
+Query :  علائم قرمز رنگ بسیار زیاد بر روی پاها بعد از رفتن از پیش ما  
+Clef test Number : clef2015.test.2
+Query : توده برجسته با نقاط قرمز رنگ بر روی بینی  
+Clef test Number : clef2015.test.3
+Query :   پاهای قرمز و خشک و فلس مانند در کودکان 
+Clef test Number : clef2015.test.4
+Query :   توده های خارش دار روی پوست 
+Clef test Number : clef2015.test.5
+Query :   صدای سوت مانند از بینی و سرفه در هنگام خواب  کودکان 
+Clef test Number : clef2015.test.6
+Query :   صدای خش خش هنگام تنفس نوزاد
+Clef test Number : clef2015.test.7
+Query :  نشانه های روزاسه 
+Clef test Number : clef2015.test.8
+Query :  قرنیه تیره و مشکل دید 
+Clef test Number : clef2015.test.9
+Query :  قرمزی چشم ها همراه با خارش 
+Clef test Number : clef2015.test.10
+Query :  جای نیش شبیه دهانه ی آتشفشان 
+Clef test Number : clef2015.test.11
+Query :  لکه های سفید در دهان 
+Clef test Number : clef2015.test.12
+Query :  نوزاد سرفه خشک می کند و به سختی بزاق قورت می دهد 
+Clef test Number : clef2015.test.13
+Query :   تاثیر مردمک تیره روی دید 
+Clef test Number : clef2015.test.14
+Query :   اشکال تنفسی نوزاد
+Clef test Number : clef2015.test.15
+Query :   حمله آسم
+Clef test Number : clef2015.test.16
+Query :  خون مردگی قرمز روی پاها
+Clef test Number : clef2015.test.17
+Query :   جوش فلس مانند 
+Clef test Number : clef2015.test.18
+Query :   اختلال تعادلی و حرکتی همراه با لرزش
+Clef test Number : clef2015.test.19
+Query :   خون مردگی زیر ناخن انگشت شصت
+Clef test Number : clef2015.test.20
+Query :   اختلال حرکتی همراه با لرزش غیر ارادی دست
+Clef test Number : clef2015.test.21
+Query :   جوشهای معمولی خارش دار روی پوست
+Clef test Number : clef2015.test.22
+Query :   ترشح غلیظ زرد رنگ چشم
+Clef test Number : clef2015.test.23
+Query : چشم های قرمز  
+Clef test Number : clef2015.test.24
+Query :   ترشح کثیف زرد رنگ از یکی ازچشم ها همراه با خارش 
+Clef test Number : clef2015.test.25
+Query :  دانه های قرمز روی پوست صورت نوزاد 
+Clef test Number : clef2015.test.26
+Query :   توده های قرمز برجسته روی پوست 
+Clef test Number : clef2015.test.27
+Query : لکه های جزئی بعد از برگشتن از خارج از کشور 
+Clef test Number : clef2015.test.28
+Query :  قارچ پوستی  در نوزاد 
+Clef test Number : clef2015.test.29
+Query :   نقاط قرمز پوست با تاول چرکی 
+Clef test Number : clef2015.test.30
+Query :   صدای عجیب هنگام تنفس 
+Clef test Number : clef2015.test.31
+Query :  تنفس سنگین کودک همراه با صدا  
+Clef test Number : clef2015.test.32
+Query :  پوست قرمز آزار دهنده روی صورت نوزاد
+Clef test Number : clef2015.test.33
+Query :   چرک سفید رنگ در حلق
+Clef test Number : clef2015.test.34
+Query :   مشکل پوسیدگی دندان
+Clef test Number : clef2015.test.35
+Query :  سوزش شدید چشم در اثر استفاده لنز 
+Clef test Number : clef2015.test.36
+Query :  لرزش چشم ها 
+Clef test Number : clef2015.test.37
+Query :  پوست فلس مانند 
+Clef test Number : clef2015.test.38
+Query :  پاهای قرمز خارش دار و فلس مانند در کودکان 
+Clef test Number : clef2015.test.39
+Query :  اگزما با تاول و چرک سفید 
+Clef test Number : clef2015.test.40
+Query : جوش چرکی قرمز روی صورت نوزاد 
+Clef test Number : clef2015.test.41
+Query :  بزرگی عنبيه  چشم 
+Clef test Number : clef2015.test.42
+Query :   خونریزی زیر پوستی
+Clef test Number : clef2015.test.43
+Query :   برامدگی خارش دار پوستی 
+Clef test Number : clef2015.test.44
+Query :  سیاه شدگی ناخن 
+Clef test Number : clef2015.test.45
+Query :  احساس خشکی و سوزش 
+Clef test Number : clef2015.test.46
+Query :  سرفه  نوزاد 
+Clef test Number : clef2015.test.47
+Query :  پوسیدگی های دندان 
+Clef test Number : clef2015.test.48
+Query :  وضعیت پزشکی عدم توقف حرکت چشم ها 
+Clef test Number : clef2015.test.49
+Query :  نوزاد همیشه با دهان بسته نفس می کشد 
+Clef test Number : clef2015.test.50
+Query :  سنقطه قرمز روی صورت نوزاد
+Clef test Number : clef2015.test.51
+Query :  رگ های خونی قرمز در چشم ها 
+Clef test Number : clef2015.test.52
+Query : نقاط سفید روی لثه ها
+Clef test Number : clef2015.test.53
+Query :  پاهای متورم 
+Clef test Number : clef2015.test.54
+Query : توده های قرمز روی بینی
+Clef test Number : clef2015.test.55
+Query :   علامت مشبک شکل روی پوست
+Clef test Number : clef2015.test.56
+Query :  خمیدگی هنگام راه رفتن 
+Clef test Number : clef2015.test.57
+Query :  خس خس و تنگی نفس در  نوزاد  
+Clef test Number : clef2015.test.58
+Query :  ۳۹ درجه و آبله مرغی 
+Clef test Number : clef2015.test.59
+Query :  تنفس سنگین همراه با صدا و خس خس 
+Clef test Number : clef2015.test.60
+Query :  نقطه سفید رنگ در عنبیه نوزاد 
+Clef test Number : clef2015.test.61
+Query :  خون مردگی زیر ناخن
+Clef test Number : clef2015.test.63
+Query :  لکه های پوسته پوسته بر روی پوست 
+Clef test Number : clef2015.test.64
+Query :  حرکت غیر ارادی سریع چشم ها به چپ و راست 
+Clef test Number : clef2015.test.65
+Query : لکه های عجیب قهوه ای روی پوست
+Clef test Number : clef2015.test.66
+Query :  درمان سرفه در نوزادان 
+Clef test Number : clef2015.test.67
+Query :  دندان سیاه 

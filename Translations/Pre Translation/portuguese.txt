@@ -1,0 +1,132 @@
+Clef test Number : clef2015.test.1
+Query : muitas marcas vermelhas nas pernas depois de viajar dos estados unidos
+Clef test Number : clef2015.test.2
+Query : inchaço com manchas de sangue no nariz
+Clef test Number : clef2015.test.3
+Query : pés vermelhos secos e descascados em crianças
+Clef test Number : clef2015.test.4
+Query : caroços coçando pele
+Clef test Number : clef2015.test.5
+Query : chiado e tosse durante o sono + crianças
+Clef test Number : clef2015.test.6
+Query : criança chiando ao respirar
+Clef test Number : clef2015.test.7
+Query : sintomas rosácea
+Clef test Number : clef2015.test.8
+Query : córnea turva e problemas de visão
+Clef test Number : clef2015.test.9
+Query : olhos vermelhos e coçando
+Clef test Number : clef2015.test.10
+Query : tipo de depressão marca de mordida
+Clef test Number : clef2015.test.11
+Query : manchas brancas na boca
+Clef test Number : clef2015.test.12
+Query : bebê tem tosse seca e problemas para engolir saliva
+Clef test Number : clef2015.test.13
+Query : pupila turva afetando a visão
+Clef test Number : clef2015.test.14
+Query : criança dificuldade para respirar
+Clef test Number : clef2015.test.15
+Query : ataque de asma
+Clef test Number : clef2015.test.16
+Query : hematomas irregulares vermelhos nas pernas
+Clef test Number : clef2015.test.17
+Query : irritação descascando
+Clef test Number : clef2015.test.18
+Query : maus passos e equilíbrio com tremores
+Clef test Number : clef2015.test.19
+Query : unha do dedão machucada
+Clef test Number : clef2015.test.20
+Query : dificuldade de movimento com tremor involuntário na mão
+Clef test Number : clef2015.test.21
+Query : irritaçoes cutâneas com coceira comuns
+Clef test Number : clef2015.test.22
+Query : excreção amarela e grossa no olho
+Clef test Number : clef2015.test.23
+Query : olhos vermelhos com sangue
+Clef test Number : clef2015.test.24
+Query : gosma amarela saindo de um olho coceira
+Clef test Number : clef2015.test.25
+Query : irritação vermelha rosto de bebê
+Clef test Number : clef2015.test.26
+Query : caroços vermelhor pele
+Clef test Number : clef2015.test.27
+Query : volta do exterior com más manchas nas pernas
+Clef test Number : clef2015.test.28
+Query : pele de bebê fungos
+Clef test Number : clef2015.test.29
+Query : mancha vermelha na pele com bolha e pus seco
+Clef test Number : clef2015.test.30
+Query : sons estranhos ao respirar
+Clef test Number : clef2015.test.31
+Query : criança com respiração chiando
+Clef test Number : clef2015.test.32
+Query : pele vermelha e irritada no rosto do bebê
+Clef test Number : clef2015.test.33
+Query : infecção vermelha na faringe
+Clef test Number : clef2015.test.34
+Query : problema de cáries
+Clef test Number : clef2015.test.35
+Query : irritação forte com lentes de contato
+Clef test Number : clef2015.test.36
+Query : olhos estão tremendo
+Clef test Number : clef2015.test.37
+Query : escamação da pele
+Clef test Number : clef2015.test.38
+Query : pés com coceira e escamação em crianças
+Clef test Number : clef2015.test.39
+Query : eczema cutâneo com bolhas e pus branco
+Clef test Number : clef2015.test.40
+Query : bebê mancha vermelha no rosto
+Clef test Number : clef2015.test.41
+Query : iris do olho grande
+Clef test Number : clef2015.test.42
+Query : hemorragia irregular sub-cutânea
+Clef test Number : clef2015.test.43
+Query : caroços com coceira pele
+Clef test Number : clef2015.test.44
+Query : unha ficando escura
+Clef test Number : clef2015.test.45
+Query : sensação seca com irritação
+Clef test Number : clef2015.test.46
+Query : tosse em bebê
+Clef test Number : clef2015.test.47
+Query : cáries
+Clef test Number : clef2015.test.48
+Query : não consigo parar de mexer os olhos problema de saúde
+Clef test Number : clef2015.test.49
+Query : bebê sempre respirando de boca fechada
+Clef test Number : clef2015.test.50
+Query : mancha vermelha rosto de bebê
+Clef test Number : clef2015.test.51
+Query : olhos vasos sanguíneos vermelhos
+Clef test Number : clef2015.test.52
+Query : manchas brancas na gengiva
+Clef test Number : clef2015.test.53
+Query : pernas inchadas
+Clef test Number : clef2015.test.54
+Query : caroços vermelhos no nariz
+Clef test Number : clef2015.test.55
+Query : marca tipo cratera na pele
+Clef test Number : clef2015.test.56
+Query : moleza ao andar
+Clef test Number : clef2015.test.57
+Query : respiração difícil e tosse com chiado em criança
+Clef test Number : clef2015.test.58
+Query : 39 graus e catapora
+Clef test Number : clef2015.test.59
+Query : respiração pesada e chiando
+Clef test Number : clef2015.test.60
+Query : bebê pinta branca na iris
+Clef test Number : clef2015.test.61
+Query : machucados nas unhas da mão
+Clef test Number : clef2015.test.63
+Query : crostas na pele
+Clef test Number : clef2015.test.64
+Query : movimento rápido involuntário direta-esquerda no olho
+Clef test Number : clef2015.test.65
+Query : manchas estranhas marrons na pele
+Clef test Number : clef2015.test.66
+Query : tratamento de tosse em bebês
+Clef test Number : clef2015.test.67
+Query : dente preto
