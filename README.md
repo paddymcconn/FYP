@@ -1,6 +1,10 @@
-# FYP
-    # Final Year Project
+# Final Year Project
 This is for the code for my Final Year Project on medical information retrieval
+  
+    # This project is done in java, using the Eclipse IDE.
+    inclusion of the Lucene Library Jar file is needed to access the methods that are used in this project,
+    found here : https://lucene.apache.org/core/
+    
 
 # DB
 This contains the database that holds the queries and their relevance scores for the different retrieval models used.
