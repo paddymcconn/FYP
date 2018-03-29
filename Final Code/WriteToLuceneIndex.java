@@ -1,18 +1,17 @@
 import java.io.IOException;
 
 import org.apache.lucene.index.CorruptIndexException;
-
+/*
+* Controller for writing to the index.
+*/
 public class WriteToLuceneIndex {
-	// these are the only variables that need to be set:
 	public static String pathToLuceneIndex = "C:/Users/u180384/luceneindexing";
 	// saved lucene index location
 	public static String pathToTheFilesToIndex = "C:/Users/u180384/Lucene-Data"; // a
-																					// C:\Users\u180384\Lucene-Data\part2
-	// particular //C:/Users/u180384/Lucene-Data
+	
+	// testing subset.																				// C:\Users\u180384\Lucene-Data\part2
 	// healt3100_12.dat // file
-	// for
 	// C:/Downloads/data/Data // testing
-	// web files location
 	public static boolean createNewIndex = true;
 	// true for creating and writing, false for adding
 
@@ -26,6 +25,5 @@ public class WriteToLuceneIndex {
 		WDI.indexWithUrls(pathtofiles);
 
 		System.out.println("..finished indexing events into lucene..");
-
 	}
 }
