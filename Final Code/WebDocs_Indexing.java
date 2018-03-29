@@ -6,6 +6,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+// java imports used.
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.CharArraySet;
@@ -24,11 +25,12 @@ import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 import org.jsoup.Jsoup;
 import org.tartarus.snowball.ext.PorterStemmer;
+// lucene imports used, + stemming used above.
 
 /*
  * It stemms with the porter stemming function.
  * It removes the stop word by tokenising.
- * 
+ * This file does all the heavy lifting, indexing the one million docs.
  *  */
 public class WebDocs_Indexing {
 	static final File INDEX_DIR = new File(WriteToLuceneIndex.pathToLuceneIndex);
@@ -46,8 +48,7 @@ public class WebDocs_Indexing {
 
 	public void indexWithUrls(String rootpath) throws IOException {
 		try {
-			// using FSDirectory as it determines best method of indexing, stops
-			// problem with 32bit overflowing machines.
+			// Base class for Directory implementations that store index files in the file system.
 			index = FSDirectory.open(INDEX_DIR2);
 			// String word = "direct";
 			// PorterStemmer stem = new PorterStemmer();
@@ -58,8 +59,6 @@ public class WebDocs_Indexing {
 			// testing the stemming function for behaviour purposes.
 
 			EnglishAnalyzer engAnalyse = new EnglishAnalyzer();
-			// EnglishAnalyzer already has stemming built in: stackoverflow
-			// question.
 
 			IndexWriterConfig config = new IndexWriterConfig(engAnalyse);
 			config.setOpenMode(IndexWriterConfig.OpenMode.CREATE);
@@ -68,8 +67,7 @@ public class WebDocs_Indexing {
 
 			File f = new File(rootpath);
 			checkDirWithUrls(f);
-			// write to lucene index.
-
+			// if its a directory we need to deal with its children first.
 			// important: needs to be closed after to not overwrite.
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -140,24 +138,21 @@ public class WebDocs_Indexing {
 					// needs to be lower case to allow stemming.
 
 					stripped_content = RemovingStopWords(stripped_content);
-					// System.out.println(stripped_content);
+					// removing the stop word with a method.
 					stripped_content = stem(stripped_content);
-					// System.out.println(stripped_content);
+					// Stemming the word.
 
 					if (!stripped_content.equals(" +")) {
 						// if there is content in the webpage
 						doc.add(new TextField("Web Content", stripped_content, Store.YES));
-						// should the stemming be done here before?
 						writer.addDocument(doc);
+						// add doc.
 					}
-
 					s = null;
 					stripped_content = "";
 					doc = null;
 				}
-
 			}
-
 			line = "";
 			reader.close();
 			in.close();
@@ -196,11 +191,9 @@ public class WebDocs_Indexing {
 			stem.setCurrent(arr[len]);
 			stem.stem();
 			result += stem.getCurrent() + " ";
-			// System.out.println(result);
 			len++;
 		}
 		return result;
-		// does do the stemming. need to remove the stop words now.
 	}
 
 	public String RemovingStopWords(String term) throws Exception, IOException {
