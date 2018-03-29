@@ -2,9 +2,10 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-
+// java imports.
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+// java xml imports.
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -44,10 +45,9 @@ public class XML_Parsing_Eclef {
 					try {
 						f = new BufferedWriter(new FileWriter(TranFile, true));
 						f.append(Num + "\r\n");
-						f.append(Query + "\r\n"); // to use , as a way to
-													// delimit the input
-													// onto different lines
-													// going into db
+						f.append(Query + "\r\n");
+						// to use , as a way to delimit the input onto different lines going into db
+						
 					} catch (IOException e) {
 						System.out.println(e);
 					} finally {
