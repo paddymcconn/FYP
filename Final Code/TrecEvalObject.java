@@ -1,4 +1,6 @@
-
+/*
+ * The getters and setters that are going to be used for scoring.
+ */
 public class TrecEvalObject implements Comparable {
 
 	private String qid;
