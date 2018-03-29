@@ -1,15 +1,10 @@
-/*
- * This java file does the querying against the Lucene index
- */
-
-///This is the search Events to use for retrieval 
-
 import java.io.Closeable;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.LinkedList;
+// Java Library used imports.
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
@@ -26,11 +21,12 @@ import org.apache.lucene.search.similarities.ClassicSimilarity;
 import org.apache.lucene.search.similarities.Similarity;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.MMapDirectory;
+//  Lucene Library used imports.
 
-/**
- * **NOTE: String index in the below code should be set to the path where the
+/*
+ * This java file does the querying against the Lucene index with VSM.
+ * NOTE: String index in the below code should be set to the path where the
  * indexed files you wish to search through are located.
- * 
  */
 
 public class SearchEventsContent_vsm {
@@ -39,27 +35,11 @@ public class SearchEventsContent_vsm {
 	private LinkedList<EventObj> results;
 	private LinkedList<QueryObjVsm> query;
 
-	SearchEventsContent_vsm(LinkedList<QueryObjVsm> event) { // this linked
-																// list holds
-																// one query,
-																// each element
-																// in the
-																// linkedlist is
-																// a different
-																// field type
-																// and the
-																// queried words
-																// for that
-																// filed type
-																// (eg a field
-																// type could be
-																// content or
-																// date); in
-																// this case we
-																// are just
-																// using
-																// contents0
-																// field
+	SearchEventsContent_vsm(LinkedList<QueryObjVsm> event) {
+	// refers back to the object we created form Vector Space Model.
+	// this linked list holds one query, each element in the linkedlist is a different field
+	// type and the queried words for that filed type (eg a field type could be
+	// content or date); in this case we are just using contents0 field
 
 		query = event;
 		noHits = "0";
@@ -84,45 +64,27 @@ public class SearchEventsContent_vsm {
 
 	public ArrayList<HitsObj> search() throws IOException, IOException {
 
-		ArrayList<HitsObj> hitsobj = new ArrayList<HitsObj>(); // Creates object
-																// to hold score
-
+		ArrayList<HitsObj> hitsobj = new ArrayList<HitsObj>();
+		// Creates object to hold the score.
 		try {
 			Directory Dir = new MMapDirectory(Point_To_Index);
 			// the lucene index
+			// mmap directory used here to allow search on large index.
+			// memory management case here.
+			
 			IndexReader reader = DirectoryReader.open(Dir);
 			// open the index as readable
 			IndexSearcher searcher = new IndexSearcher(reader);
-			// DirectoryReader reader = DirectoryReader.open((Directory)
-			// Point_To_Index);
-			// IndexSearcher searcher = new IndexSearcher(reader);
-			Analyzer analyzer = new EnglishAnalyzer(); /**
-														 * // was changed to
-														 * normal analysers. //
-														 * debugger stops here,
-														 * is there a prblem
-														 * with the stemmer/
-														 * This should be set to
-														 * the same Analyzer as
-														 * was used for indexing
-														 **/
+			Analyzer analyzer = new EnglishAnalyzer(); 
+												
 
 			Similarity similarity = new ClassicSimilarity(); // classic is vsm
-			searcher.setSimilarity(similarity);// ****
-			// if i dont set it it should be default as it needs to be non-null
+			searcher.setSimilarity(similarity);
+			
 			QueryParser parser = new QueryParser(query.getFirst().getField(), analyzer);
-			parser.setDefaultOperator(QueryParser.OR_OPERATOR);// ****
-			BooleanQuery b = new BooleanQuery.Builder()
-					.add(parser.parse(query.getFirst().getText()), BooleanClause.Occur.SHOULD).build();// now
-			System.out.println(b.toString()); // immutable,
-			// needs
-			// build
-			// method/.
-			// QueryParser parser = new QueryParser(query.getFirst().getField(),
-			// analyzer);// ****
-			// parser.setDefaultOperator(QueryParser.OR_OPERATOR);// ****
-			// b.add(parser.parse(query.getFirst().getText()),
-			// BooleanClause.Occur.SHOULD);// ****
+			parser.setDefaultOperator(QueryParser.OR_OPERATOR);
+			BooleanQuery b = new BooleanQuery.Builder().add(parser.parse(query.getFirst().getText()), BooleanClause.Occur.SHOULD).build();
+			System.out.println(b.toString()); 
 
 			TopScoreDocCollector collector = TopScoreDocCollector.create(100);
 			// depricated TopDocCollector collector = new TopDocCollector(100);
@@ -142,15 +104,11 @@ public class SearchEventsContent_vsm {
 				HitsObj ho = new HitsObj(idof, sco);
 
 				hitsobj.add(ho);
-
 			}
-
 			reader.close();
 			((Closeable) searcher).close();
 		} catch (Exception e) {
 		}
-
 		return hitsobj;
-
 	}
 }
