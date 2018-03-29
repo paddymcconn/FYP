@@ -1,4 +1,6 @@
-
+/* This is used for the scoring part of the retrieval.
+* Gets and sets the score, used in another class.
+*/
 public class HitsObj {
 
 	private String id;
@@ -20,5 +22,4 @@ public class HitsObj {
 	public void setScore(double s) {
 		score = s;
 	}
-
 }
