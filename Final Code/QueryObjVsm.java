@@ -1,17 +1,14 @@
 /*
  * Getter and setters for the VSM retrieval objects.
- * 
  * */
 
 public class QueryObjVsm {
 
 	String field;
 	String text;
-
 	public QueryObjVsm(String f, String t) {
 		field = f;
 		text = t;
-
 	}
 
 	public QueryObjVsm() {
@@ -33,5 +30,4 @@ public class QueryObjVsm {
 	public void setText(String text) {
 		this.text = text;
 	}
-
 }
