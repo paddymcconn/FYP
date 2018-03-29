@@ -6,21 +6,26 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Scanner;
+// java imports.
+
+/*
+* used to write to the database tables.
+*/
 
 public class WriteQueriesToDB_edit {
 
 	// for sqllite:
 	private static String connectionUrl = "C:/Users/u180384/IR/sqlite/EClef.db";
-	// point to the right database
+	
 	// Declare the JDBC objects.
 	private Connection con;
 	private Statement stmt;
 	private ResultSet rs;
 
-	public WriteQueriesToDB_edit(String queriesTableName) { // called queries in
-															// the other class
+	public WriteQueriesToDB_edit(String queriesTableName) {
+	// called queries in the other class
 
-		// Declare the JDBC objects.
+		// Instantiate the JDBC objects.
 		con = null;
 		stmt = null;
 		rs = null;
@@ -32,7 +37,7 @@ public class WriteQueriesToDB_edit {
 
 			// sqllite server:
 			String sql = "CREATE TABLE if not exists " + queriesTableName + "(queryNum STRING, queryTerms STRING) ";
-			// what we want in the table, test numbers and the translations
+			// create the table for the queries, number and terms.
 
 			Statement stat = con.createStatement();
 			stat.execute(sql);
@@ -55,13 +60,11 @@ public class WriteQueriesToDB_edit {
 				} catch (Exception e) {
 				}
 		}
-
 	}
-
 	// writing queries to db
-	public void write2017(String pathtofiles, String tableName) {
-
-		// Declare the JDBC objects.
+	public void writeToDB(String pathtofiles, String tableName) {
+		
+		// Instantiate the JDBC objects.
 		con = null;
 		stmt = null;
 		rs = null;
@@ -76,39 +79,29 @@ public class WriteQueriesToDB_edit {
 			FileReader reader = new FileReader(child);
 			Scanner in = new Scanner(reader);
 
-			// String line = "";
-
-			// line = in.nextLine();// xml first line
-			// line = in.nextLine();// <queries> tag
-
 			while (in.hasNextLine()) {
-				// line = in.nextLine(); // <query> tag
 				String Num = in.nextLine().replace("<num>", "");
 				Num = Num.replace("</num>", "");
 
 				String Query = in.nextLine().replace("<query>", "");
 				Query = Query.replace("</query>", "");
 
-				// line = in.nextLine(); // </query> tag
-				// line = in.nextLine(); //blank line
-
 				// write details to DB:
 				String SQL1 = "INSERT INTO " + tableName + " (queryNum, queryTerms) VALUES(?, ?);";
 
-				PreparedStatement pstmt1 = con.prepareStatement(SQL1); // create
-																		// a
-																		// statement
+				PreparedStatement pstmt1 = con.prepareStatement(SQL1)
+				// create statement
+				
 				pstmt1.setString(1, Num);
 				pstmt1.setString(2, Query);
 
 				pstmt1.executeUpdate(); // execute insert statement
 				pstmt1.close();
-
 			}
-
 			reader.close();
 			in.close();
-
+			
+			// handle errors.
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
@@ -128,6 +121,5 @@ public class WriteQueriesToDB_edit {
 				} catch (Exception e) {
 				}
 		}
-
 	}
 }
