@@ -54,14 +54,14 @@ public class testRetrieve_DirlechtSmoothing {
 				keywords = keywords.replace("?", "");
 				
 				// RUN THE QUERY:
-				QueryObjDS q2 = new QueryObjDS("Web Content",keywords);
+				QueryObjDirlecht q2 = new QueryObjDirlecht("Web Content",keywords);
 				
-				LinkedList<QueryObjBm25> query = new LinkedList<QueryObjDS>();
+				LinkedList<QueryObjDirlecht> query = new LinkedList<QueryObjDirlecht>();
 				query.add(q2);// keywords
 
 				// call searchEvents to get the docs that match this query (it
 				// will return a linked list of the docs that match this query).
-				SearchEventsContents_DS_25 search = new SearchEventsContents_DS_25(query);
+				SearchEventsContents_Dirlecht search = new SearchEventsContents_Dirlecht(query);
 				ArrayList<HitsObj> resultsC = search.search(); 
 				// the array list holds item ids and their relevance to query score
 				
