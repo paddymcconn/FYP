@@ -2,6 +2,8 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonSyntaxException;
+// google api imports used.
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
@@ -12,12 +14,12 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Scanner;
-
+// java imports used.
 
 import javax.net.ssl.HttpsURLConnection;
+// connection import.
 
 public class Translation {
-
 	private String key;
 
 	public Translation(String apiKey) {
@@ -29,16 +31,16 @@ public class Translation {
 		try {
 			String encodedText = URLEncoder.encode(text, "UTF-8");
 
-			String urlStr = "https://www.googleapis.com/language/translate/v2?key=" + key + "&q=" + encodedText
-					+ "&target=" + to + "&source=" + from;
-			// api request with the appropriate info stored in strings for ease
-			// of input
+			String urlStr = "https://www.googleapis.com/language/translate/v2?key=" + key + "&q=" + encodedText + "&target=" + to + "&source=" + from;
+			// api request with the appropriate info stored in strings for ease of repeated use.
+			
 			URL url = new URL(urlStr);
-
 			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 			// open connection
+			
 			InputStream stream;
 			// taking in all the bits as a stream
+			
 			if (conn.getResponseCode() == 200) // success
 			{
 				stream = conn.getInputStream();
@@ -63,7 +65,6 @@ public class Translation {
 					String translatedText = obj.get("data").getAsJsonObject().get("translations").getAsJsonArray()
 							.get(0).getAsJsonObject().get("translatedText").getAsString();
 					return translatedText;
-
 				}
 			}
 
@@ -74,7 +75,6 @@ public class Translation {
 		} catch (IOException | JsonSyntaxException ex) {
 			System.err.println(((Throwable) ex).getMessage());
 		}
-
 		return null;
 	}
 
@@ -98,30 +98,19 @@ public class Translation {
 		String input = Sc.next();
 		String output = Sc.next();
 		Sc.close();
-		Translation translator = new Translation("AIzaSyDk0S3HtkaOuMVmZA5769pt-JaCAnsOPqg");
+		Translation translator = new Translation("TheAPIKEY-DeletedForDepersonalisation");
 		// passed in the api key for authentication
 		String text = translator.translate(keeper, input, output);
-		// BufferedWriter f = null;
-		// f = new BufferedWriter(new FileWriter(text,true));
-		// f.append(text);
+	
 		try {
 		    BufferedWriter out = new BufferedWriter(new FileWriter("C://Users/u180384/Dropbox/Final Year/Final Year Project/test_xml/test_translated.txt"));
-		    out.write(text);  //Replace with the string 
-		                                             //you are trying to write  
-		    out.close();
+		    out.write(text);
+			out.close();
 		}
 		catch (IOException e)
 		{
 		    System.out.println("Exception ");
-
 		}
 		System.out.println(text);
-		// changes needed:
-		// change to take in as a file and parse out the tags
-		// needs to be formatted for the database
-		// once this is done need to begin indexing the queries and taking out
-		// the stop words
-		// wants as german xml format with query and translation in that order.
-		//
 	}
 }
